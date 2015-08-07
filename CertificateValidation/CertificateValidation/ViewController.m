@@ -15,7 +15,7 @@
 
 @interface ViewController ()
 
-@property (nonatomic,strong) NSData *receivedData;
+@property (nonatomic, strong, nullable) NSData *receivedData;
 @property (nonatomic, strong, nullable) WKWebView *webView;
 
 @end

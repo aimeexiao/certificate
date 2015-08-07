@@ -12,9 +12,11 @@
 +(BOOL) verifyAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge withURL:(NSURL *)url;
 
 +(void)readLocalCertificate;
-+(void)generateKeyPair;
-+(void)encryptWithPublicKey;
-+(void)decryptWithPrivateKey;
-+(void)signWithPrivateKey;
-+(void)verifyWithPublicKey;
++(BOOL)generateKeyPairWithPublicKey:(SecKeyRef)publicKey privateKey:(SecKeyRef)privateKey;
++(void)encryptData:(NSData *)plainData publicKey:(SecKeyRef)publicKey;
++(void)decryptData:(NSData *)cipherData privateKey:(SecKeyRef)privateKey;
+
++(void)signData:(NSData *)plainData privateKey:(SecKeyRef)privateKey;
++(void)verifySignature:(NSData *)signature publicKey:(SecKeyRef)publicKey plainData:(NSData *)plainData;
+
 @end

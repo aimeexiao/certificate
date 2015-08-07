@@ -95,14 +95,8 @@
 		B98971011B723114007293FC /* CertificateValidation */ = {
 			isa = PBXGroup;
 			children = (
+				C17634391B74649900642476 /* project */,
 				C17634291B745BB800642476 /* certificate */,
-				B98971061B723114007293FC /* AppDelegate.h */,
-				B98971071B723114007293FC /* AppDelegate.m */,
-				B98971091B723114007293FC /* ViewController.h */,
-				B989710A1B723114007293FC /* ViewController.m */,
-				B989710C1B723114007293FC /* Main.storyboard */,
-				B989710F1B723114007293FC /* Images.xcassets */,
-				B98971111B723114007293FC /* LaunchScreen.xib */,
 				B98971021B723114007293FC /* Supporting Files */,
 			);
 			path = CertificateValidation;
@@ -147,6 +141,20 @@
 				C176342D1B745BD500642476 /* HashUtility.m */,
 			);
 			name = certificate;
+			sourceTree = "<group>";
+		};
+		C17634391B74649900642476 /* project */ = {
+			isa = PBXGroup;
+			children = (
+				B98971061B723114007293FC /* AppDelegate.h */,
+				B98971071B723114007293FC /* AppDelegate.m */,
+				B98971091B723114007293FC /* ViewController.h */,
+				B989710A1B723114007293FC /* ViewController.m */,
+				B989710C1B723114007293FC /* Main.storyboard */,
+				B989710F1B723114007293FC /* Images.xcassets */,
+				B98971111B723114007293FC /* LaunchScreen.xib */,
+			);
+			name = project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
